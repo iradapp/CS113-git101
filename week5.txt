@@ -1,0 +1,27 @@
+Functions and Program Struction ตอนที่ 
+1.Scope Rules (ขอบเขตเเละช่วงชีวิตของตัวเเปร)
+    ในบางบริเวณที่ถูกกำหนดอาจเข้าถึงได้ เเต่ถ้าออกจากบริเวรดังกล่าว ตัวเเปรนั้นอาจไม่สามารถถุกเข้าถึงได้อีก
+    -Local varaible ตัวแปรที่ถูกประกาศไว้ใน block ใช้ได้แค่ฟังก์ชั่นที่ประกาศไว้
+    -Global varaible ตัวแปรที่ถูกประกาศนอกฟังก์ชั่นเป็นตัวแปร Global ซึ่งสามารถถูกเข้าถึงได้จากฟังก์ชันต่างๆ
+    -Storage Classes 4 ประเภท auto,register,extern,static
+        -auto และ register ใช้กำหนดตัวแปร ใน memory
+        -local มักไม่ค่อยเห็น 
+        -register เก็บค่าตัวแปรไว้เพื่อความเร็วในการเข้าถึงตัวแปร
+        -extern เเละ static ใช้กำหนดตัวแปร ตั้งแต่เริ่มทำงาน จะอยุ่ใน memory
+2.Separate Compilation (การคอมไพลืเเยกส่วน)
+    ไม่จำเป็นต้องถูกคอมไพล์ในเวลาเดียวกัน เเละสามารถเเยกกันอยู่คนละไฟล์ได้
+3.การใช้ make 
+    การสร้างกฏ
+4.การสร้าง Static Library
+    gcc -c func.c
+    ar cr libfunc.a func.o
+5.การสรา้ง Shared (Dynamic) Library
+  windows = gcc -shared -o libfunc.dll -Wl,--out-implib,libfunc.dll.a *.o
+  Mac = gcc -shared -o libfunc.dylib *.o
+  Linux = gcc -shared -o libfunc.so *.o
+6.การเรียกใช้ฟังก์ชันใน Shared Library จากภาษา C ของ Python
+7.Random Number Generator
+    ใช้ในการสร้างเลขสุ่มที่เป็นจำนวนเต็ม
+
+                  
+                                

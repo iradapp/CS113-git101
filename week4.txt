@@ -1,0 +1,24 @@
+Funtions and Program Structure ตอนที่1
+1.Funtion Definition (การนิยามฟังก์ชัน)
+    -จะมี Function header และ Function body
+    -คอมไพเลอร์ภาษา C เป็นคอมไพเลอร์ One-pass
+2.Function Prototypes 
+    -มีลักษณะเหมือน Function header ของ Funtion Definition
+    -Parameter-list สามารถละชื่อตัวเเปรได้ เเต่ไม่สามารถละประเภทของข้อมุลได้
+3.Standard Library Function and Math Library Function
+    -printf,scanf,getchar เป็นตัวอย่างของฟังก์ชันที่อยู่ใน Standard Library Function
+    -sqrt,exp,log เป็นตัวอย่างของฟังก์ชันที่อยู่ใน Math Library Function
+4.Return Values
+    -ฟังก์ชั่นจะต้องส่งค่ากลับ หรือไม่ก็เป็นฟังก์ชันที่มี return type เป็น void เพื่อบอกว่าจะไม่มีการส่งค่ากลับ
+    ไปยังผู้เรียก
+    -หากเป็นฟังก์ชันที่มีการส่งค่ากลับ เราใช้คีย์เวิร์ด return เพื่อส่งกลับค่าข้อมูล
+5.Using Functions as Parameters to Functions
+    -ค่าที่ได้จากการเรียกใช้ฟังชันส์สามารถส่งผ่านไปเป็นพารามิเตอร์ของการเรียกใช้ฟังก์ชันได้
+6.Recursion (การเรียกซ้ำ)
+    -ฟังชันส์ที่เรียกใช้ตนเองได้
+    -การเรียกตนเองสามารถอยุ่ในรูป direct เเละ indirect
+    -เมื่อฟังก์ชันมีการเรียกใช้ตนเอง โปรเเกรมจะสำเนาค่าตัวเเปรต่างๆภายในฟังก์ชันขึ้นมาอีกชุด ดดนเป็นตัวเเปรอิสระจากการถูกเรียกในครั้งก่อนหน้า
+7.Function Call และ Stack Frames
+    -เพื่อให้โปรเเกรมสามารถจัดเก็บตัวเเปรเป้นจำนวนมากในขฯะที่โปรเเกรมทำงานได้ ฟังก์ชันจะทำ stack frame เพื่อจัดเก็บข้อมูลตัวแปร parameter และ Local
+    ที่อยู่ในฟังก์ชั่น 
+    -return address เป็นตำแหน่งของคำสั่งที่จะถุกทำงานหลังจากที่ฟังก์ชันถูกเรียกเมื่อทำงานเสร็จ
